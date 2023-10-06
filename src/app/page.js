@@ -22,9 +22,11 @@ export const metadata = {
     title:'Nextjs'
   },
 }
-export default function Home() {
+export default  function Home() {
+ 
   console.log(process.env)
-  return (
+  return (<>
+
     <Box sx={{ display: 'flex' }}>
        <Alert severity="info" sx={{ mt: 2, mb: 5 }}>
         <AlertTitle>Hello 👋</AlertTitle>
@@ -54,6 +56,6 @@ export default function Home() {
       </List>
       <Page/>
     </Drawer>
-  </Box>
+  </Box></>
   )
 }
